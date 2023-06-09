@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>La Diaco</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            color: #fff;
+            /*background: linear-gradient(45deg,#131313,#2B2B2B,#86868B,#1561F0);*/
+            background: linear-gradient(45deg,#4DBDEB,#FFFFFF,#DFEEEE,#174D4D);
+            /*background: linear-gradient(45deg,#000000,#FF6D09,#979797,#FFFFFF);*/
+            background-size: 400% 400%;
+            position: relative;
+            animation: cambiar 10s ease infinite;
+        }
+        @keyframes cambiar {
+            0% {background-position: 0 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0 50%;}
+        }
+
+        .container {
+             margin-bottom: 150x;
+            }
+            h2 {
+                color: #4DBDEB;
+            }
+ 
+        .card-title 
+       {
+            color: rgb(255, 187, 0);
+        }
+        
+        .card-text 
+        {
+            color: rgb(0, 13, 129);
+        }
+        
+        .card-img-top
+        {
+        width: 400px;
+        height: 200px;
+        }
+
+        form label {
+            color: rgb(255, 187, 0);
+        }
+
+        .btn-primary {
+            color: rgb(255, 255, 255);
+        }
+      </style>
+        
+      
+      
+</head>
+
+<body>
+   <section>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Diaco quejas en línea</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Envíos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--logo-->
+    <center><img src="img/logo1.png" class="d-block w-10" alt="..."></center>
+
+    <!-- Jumbotron -->
+        <div class="container">
+            <p style="font-size: 50px" class="text-warning">Envía tus quejas con nosotros</p>
+            <p style="font-size: 25px" class="text-info">Nuestra plataforma de envíos de quejas en línea te permite enviar tus comentarios anonimos a nuestra empresa central.</p>
+            <a class="btn btn-primary btn-lg" href="index.html" button">Comienza ahora</a>
+        </div>
+
+    <!-- Sección de servicios -->
+    <p>     </p>
+    <div class="card-group">
+        <div class="card">
+            <img src="img/1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Recepción y gestión de quejas</h5>
+            <p class="card-text">Los consumidores pueden presentar quejas sobre productos defectuosos, servicios insatisfactorios, publicidad engañosa, prácticas comerciales injustas, entre otros problemas.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="img/3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Información sobre derechos del consumidor</h5>
+            <p class="card-text">La DIACO puede proporcionar información detallada sobre los derechos del consumidor en diferentes áreas, como compras en línea, contratos de servicios, garantías de productos, protección de datos personales y más.</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="img/4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Inspecciones y controles de calidad</h5>
+              <p class="card-text">La DIACO puede llevar a cabo inspecciones y controles de calidad en productos y servicios para garantizar que cumplan con los estándares y regulaciones establecidos.</p>
+            </div>
+          </div>
+        <div class="card">
+            <img src="img/5.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Educación y concientización del consumidor</h5>
+            <p class="card-text">La DIACO puede llevar a cabo programas de educación y campañas de concientización para informar a los consumidores sobre sus derechos, responsabilidades y buenas prácticas de consumo. </p>
+          </div>
+        </div>
+    </div>
+    <p>         </p>
+<!-- Sección de formulario de envío -->
+<p>         </p>    
+<div class="container mt-5">
+        <h2 class="text-center mb-2">Formulario de quejas</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="negocio">Nombre del negocio:</label>
+                    <input type="text" class="form-control" id="negocio">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" class="form-control" id="direccion">
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="fecha">Fecha:</label>
+                <input type="datetime-local" class="form-control" id="fecha">
+            </div>
+            <div class="form-group col-md-6">
+                    <label for="telefono">Numero Telefono:</label>
+                    <input type="int" class="form-control" id="telefono">
+                </div>
+                </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="tipo-queja">Tipo de queja</label>
+                    <select id="tipo-queja" class="form-control">
+                        <option selected>Selecciona un tipo de queja...</option>
+                        <option>Servicio al cliente deficiente</option>
+                        <option>Productos defectuosos o de mala calidad</option>
+                        <option>Publicidad engañosa</option>
+                        <option>Incumplimiento de garantias</option>
+                        <option>Cobros indebidos o excesivos</option>
+                        <option>Incumplimiento de contratos</option>
+                        <option>Negligencia o daños</option>
+                        <option>Problemas de seguridad</option>
+                        <option>Problemas de higiene</option>
+                        <option>Practicas comerciales deshonestas</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="comentario">Comentario</label>
+                    <textarea class="form-control" id="comentario" rows="3"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Code Cranium. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline text-md-right">
+                        <li class="list-inline-item"><a href="#">Inicio</a></li>
+                        <li class="list-inline-item"><a href="#">Envíos</a></li>
+                        <li class="list-inline-item"><a href="#">Rastrear envío</a></li>
+                        <li class="list-inline-item"><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+   </section>
+</body>
